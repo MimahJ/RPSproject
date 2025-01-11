@@ -70,3 +70,11 @@ while rounds not in [3, 5]:
     rounds = int(input("Enter the number of rounds (3 or 5): "))
 
 play_game(rounds)
+
+play_again =input("\nDo you want to play again? (yes/no):").lower()
+while play_again not in ["yes", "no"]:
+    play_again = input("Invalid input. Please type 'yes' or 'no':").lower()
+    
+    if play_again == "no":
+     print("Thanks for playing! Goodbye!")
+    break
