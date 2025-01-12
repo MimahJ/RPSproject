@@ -68,7 +68,6 @@ rounds = int(input("Enter the number of rounds (3 or 5): "))
 while rounds not in [3, 5]:
     print("Invalid number of rounds. Please choose either 3 or 5.")
     rounds = int(input("Enter the number of rounds (3 or 5): "))
-
 play_game(rounds)
 
 play_again =input("\nDo you want to play again? (yes/no):").lower()
@@ -78,3 +77,7 @@ while play_again not in ["yes", "no"]:
     if play_again == "no":
      print("Thanks for playing! Goodbye!")
     break
+# Start the game
+print("Welcome to Rock, Paper, Scissors!")
+play_game(rounds)
+
